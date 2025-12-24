@@ -2,10 +2,105 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>Frank</title>
+  <title>Frank | Personal Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* --- homepage only enhancement --- */
+
+    .hero {
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.45),
+          rgba(0,0,0,0.45)
+        ),
+        url("/assets/images/hero-bg.jpg") center/cover no-repeat;
+      color: #fff;
+      padding: 80px 0 70px;
+      margin-bottom: 48px;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 0 0 16px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: #e5e7eb;
+      max-width: 560px;
+    }
+
+    .hero-tags {
+      margin-top: 18px;
+    }
+
+    .hero-tags span {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .avatar {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid rgba(255,255,255,0.6);
+      margin-left: auto;
+    }
+
+    @media (max-width: 900px) {
+      .avatar {
+        margin: 0 auto;
+      }
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .quick-links {
+      margin-top: 22px;
+    }
+
+    .quick-links a {
+      display: inline-block;
+      margin-right: 18px;
+      font-size: 14px;
+      color: #e5e7eb;
+      border-bottom: 1px dashed rgba(255,255,255,0.4);
+    }
+
+    .quick-links a:hover {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  </style>
 </head>
+
 <body>
 
 <header class="nav">
@@ -21,19 +116,48 @@
   </div>
 </header>
 
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <h1>Hello, I'm Frank</h1>
+      <p>
+        在读硕士研究生，研究方向为
+        <strong>智能交通系统（ITS）</strong> 与
+        <strong>深度强化学习（DRL）</strong>，
+        关注多车协同决策、交通仿真与可复现实验方法。
+      </p>
+
+      <div class="hero-tags">
+        <span>Intelligent Transportation Systems</span>
+        <span>Deep Reinforcement Learning</span>
+        <span>Multi-Agent Systems</span>
+        <span>SUMO / Flow</span>
+      </div>
+
+      <div class="quick-links">
+        <a href="/research/">Research →</a>
+        <a href="/note/">Notes →</a>
+        <a href="/life/">Life →</a>
+      </div>
+    </div>
+
+    <div class="avatar">
+      <img src="/assets/images/avatar.png" alt="Frank avatar">
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAIN ================= -->
 <main class="container">
-  <h1>Hello, it's Frank!</h1>
-  <p class="subtitle">
-    在读硕士研究生 · 智能交通系统 (Intelligent Transportation Systems) · 深度强化学习 (Deep Reinforcement Learning)
-  </p>
 
   <section class="grid-3">
 
     <div class="card">
       <h3>Research</h3>
       <p>
-        Selected journal and conference papers on cooperative merging,
-        grouping strategies, and traffic control.
+        我的研究聚焦于多车协同驾驶与交通控制问题，
+        包括协同并线、车辆分组策略、以及基于强化学习的决策方法。
       </p>
       <a href="/research/">View research →</a>
     </div>
@@ -41,22 +165,23 @@
     <div class="card">
       <h3>Note</h3>
       <p>
-        Personal knowledge base: Git, Linux, LaTeX, experiment setup,
-        and reproducible research tips.
+        个人知识库与技术备忘录，记录 Git / Linux / LaTeX、
+        实验配置、踩坑经验与科研工程实践。
       </p>
-      <a href="/note/">Open note →</a>
+      <a href="/note/">Open notes →</a>
     </div>
 
     <div class="card">
       <h3>Life</h3>
       <p>
-        Multi-vehicle cooperative driving, reinforcement learning,
-        traffic simulation (SUMO / Flow), and V2X perception.
+        科研之外的一些记录，包括日常思考、学习节奏、
+        运动与生活片段。
       </p>
       <a href="/life/">Share life →</a>
     </div>
 
   </section>
+
 </main>
 
 <footer>
