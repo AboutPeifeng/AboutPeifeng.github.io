@@ -109,6 +109,12 @@ h3 {
 }
 
 .subtitle {
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.annotation {
   color: var(--muted);
   margin-bottom: 24px;
 }
