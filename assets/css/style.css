@@ -191,7 +191,7 @@ footer {
 }
 
 .symbol-table th {
-  background: var(--bg-soft);
+  background: var(--text);
   font-weight: 600;
 }
 
