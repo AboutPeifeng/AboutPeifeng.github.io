@@ -6,7 +6,7 @@
   <title>Note | Frank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <style>
+  <!-- <style>
     body {
       font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
       background: #f6f7f9;
@@ -26,10 +26,10 @@
       border-radius: 6px;
       overflow-x: auto;
     }
-  </style>
+  </style> -->
 </head>
 
-<body>
+<body class="note-page">
 
   <h1>Git Notes</h1>
 
@@ -46,7 +46,7 @@ git fetch
 ```
   </script>
 
-  <article id="md-content"></article>
+  <article class="note-content" id="md-content"></article>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script> const mdText = document.getElementById('md-source').textContent; document.getElementById('md-content').innerHTML = marked.parse(mdText); </script>
 

@@ -128,3 +128,38 @@ footer {
   color: var(--muted);
   font-size: 14px;
 }
+
+.note-page {
+  background: var(--bg-soft);
+  padding: 40px 0;
+}
+
+.note-content {
+  background: var(--card);
+  padding: 24px;
+  border-radius: var(--radius);
+  line-height: 1.7;
+}
+
+/* Markdown code blocks */
+.note-content pre {
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.note-content h2 {
+  margin-top: 28px;
+}
+
+.note-content ul {
+  padding-left: 1.2em;
+}
+
+.note-content code {
+  background: #eef0f3;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
