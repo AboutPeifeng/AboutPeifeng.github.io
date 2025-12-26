@@ -174,3 +174,28 @@ footer {
   color: #111827;
   line-height: 1.6;
 }
+
+.symbol-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.symbol-table th,
+.symbol-table td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.symbol-table th {
+  background: var(--bg-soft);
+  font-weight: 600;
+}
+
+.symbol-table td:nth-child(1),
+.symbol-table td:nth-child(2) {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+}

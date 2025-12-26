@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <title>Note: LaTeX | Frank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/images/lightning.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/images/lightning.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon.ico">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -28,35 +33,49 @@
     <p>
       下面整理了一些在日常开发和服务器维护中经常使用的 LaTeX 命令。
     </p>
+
+    <p class="subtitle">
+      希腊字母表（Greek Alphabet）
+    </p>
+    <table class="symbol-table">
+      <thead>
+        <tr>
+          <th>大写</th>
+          <th>小写</th>
+          <th>名称</th>
+          <th>读音</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Α</td><td>α</td><td>alpha</td><td>/ˈælfə/</td></tr>
+        <tr><td>Β</td><td>β</td><td>beta</td><td>/ˈbeɪtə/</td></tr>
+        <tr><td>Γ</td><td>γ</td><td>gamma</td><td>/ˈɡæmə/</td></tr>
+        <tr><td>Δ</td><td>δ</td><td>delta</td><td>/ˈdeltə/</td></tr>
+        <tr><td>Ε</td><td>ε</td><td>epsilon</td><td>/ˈepsɪlɒn/</td></tr>
+        <tr><td>Ζ</td><td>ζ</td><td>zeta</td><td>/ˈziːtə/</td></tr>
+        <tr><td>Η</td><td>η</td><td>eta</td><td>/ˈiːtə/</td></tr>
+        <tr><td>Θ</td><td>θ</td><td>theta</td><td>/ˈθiːtə/</td></tr>
+        <tr><td>Ι</td><td>ι</td><td>iota</td><td>/aɪˈoʊtə/</td></tr>
+        <tr><td>Κ</td><td>κ</td><td>kappa</td><td>/ˈkæpə/</td></tr>
+        <tr><td>Λ</td><td>λ</td><td>lambda</td><td>/ˈlæmdə/</td></tr>
+        <tr><td>Μ</td><td>μ</td><td>mu</td><td>/mjuː/</td></tr>
+        <tr><td>Ν</td><td>ν</td><td>nu</td><td>/njuː/</td></tr>
+        <tr><td>Ξ</td><td>ξ</td><td>xi</td><td>/ksaɪ/</td></tr>
+        <tr><td>Ο</td><td>ο</td><td>omicron</td><td>/ˈoʊmɪkrɒn/</td></tr>
+        <tr><td>Π</td><td>π</td><td>pi</td><td>/paɪ/</td></tr>
+        <tr><td>Ρ</td><td>ρ</td><td>rho</td><td>/roʊ/</td></tr>
+        <tr><td>Σ</td><td>σ / ς</td><td>sigma</td><td>/ˈsɪɡmə/</td></tr>
+        <tr><td>Τ</td><td>τ</td><td>tau</td><td>/taʊ/</td></tr>
+        <tr><td>Υ</td><td>υ</td><td>upsilon</td><td>/ˈʌpsɪlɒn/</td></tr>
+        <tr><td>Φ</td><td>φ</td><td>phi</td><td>/faɪ/</td></tr>
+        <tr><td>Χ</td><td>χ</td><td>chi</td><td>/kaɪ/</td></tr>
+        <tr><td>Ψ</td><td>ψ</td><td>psi</td><td>/psaɪ/</td></tr>
+        <tr><td>Ω</td><td>ω</td><td>omega</td><td>/oʊˈmeɡə/</td></tr>
+      </tbody>
+    </table>
+
     <script type="text/markdown" id="md-source">
 $E = mc^2$/
-\verb|\frac{a}{b}|
-
-$A~\alpha$: alpha /\textipa{"}\ae lf\textipa{@}/
-$B~\beta$: beta /\textipa{"}be\textipa{I}t\textipa{@}/
-$\Gamma~\gamma$: gamma /\textipa{"}g\ae m\textipa{@}/
-$\Delta~\delta$: delta /\textipa{"}delt\textipa{@}/
-$E~\epsilon/\varepsilon$: epsilon /\textipa{"}eps\textipa{I}l\textipa{6}n/
-$Z~\zeta$: zeta /\textipa{"}zi\textipa{:}t\textipa{@}/
-$H~\eta$: eta /\textipa{"}i\textipa{:}t\textipa{@}/
-$\Theta~\theta/\vartheta$: theta /\textipa{"T}i\textipa{:}t\textipa{@}/
-$I~\iota$: lota /a\textipa{I"@U}t\textipa{@}/
-$K~\kappa$: kappa /\textipa{"}k\ae p\textipa{@}/
-$\Lambda~\lambda$: lambda /\textipa{"}l\ae md\textipa{@}/
-$M~\mu$: mu /mju\textipa{:}/
-$N~\nu$: nu /nju\textipa{:}/
-$O~o$: omicron /\textipa{@}u\textipa{"}maikr\textipa{@}n/
-$\Xi~\xi$: xi /ksi/
-$\Pi~\pi/\varpi$: pi /pa\textipa{I}/
-$P~\rho/\varrho$: rho /r\textipa{@U}/
-$\Sigma~\sigma/\varsigma$: sigma /\textipa{"}s\textipa{I}gm\textipa{@}/
-$T~\tau$: tau /ta\textipa{U}/
-$\Upsilon~\upsilon$: upsilon /\textipa{"}ips\textipa{I}lon/
-$\Phi~\phi/\varphi$: phi /fa\textipa{I}/
-$X~\chi$: chi /ka\textipa{I}/
-$\Psi~\psi$: psi /ps/
-$\Omega~\omega$: omega /\textipa{"@}m\textipa{I}g\textipa{@}/
-
     </script>
 
     <article class="note-content" id="md-content"></article>
