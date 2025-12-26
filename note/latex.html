@@ -22,15 +22,14 @@
 
   <main class="container">
     <h1>LaTeX Note</h1>
-    <script type="text/markdown" id="md-source">
-## 常用
+    <script type="text/markdown" id="md-source">## 常用
 下面是简单的示例
 $$
 E = mc^2
 $$
     </script>
 
-    <article id="md-content"></article>
+    <article class="note-content" id="md-content"></article>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       const mdText = document.getElementById('md-source').textContent;
