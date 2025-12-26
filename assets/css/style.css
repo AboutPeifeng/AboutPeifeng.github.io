@@ -154,3 +154,17 @@ footer {
   border-radius: 4px;
   font-size: 0.95em;
 }
+
+.cmd-block pre {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+
+.cmd-block code {
+  font-family: Consolas, "JetBrains Mono", "Fira Code", monospace;
+  font-size: 14px;
+  color: #111827;
+  line-height: 1.6;
+}
