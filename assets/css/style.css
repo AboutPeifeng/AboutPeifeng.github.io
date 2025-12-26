@@ -158,8 +158,11 @@ footer {
 .cmd-block pre {
   background: #f3f4f6;
   border-radius: 8px;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
+  padding: 0 20px;
   overflow-x: auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .cmd-block code {
