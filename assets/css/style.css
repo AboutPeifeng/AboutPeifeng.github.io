@@ -27,8 +27,6 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- common ---------- */
-
 a {
   color: var(--link);
   text-decoration: none;
@@ -68,8 +66,6 @@ a:hover {
   }
 }
 
-/* ---------- navigation ---------- */
-
 .nav {
   position: sticky;
   top: 0;
@@ -100,8 +96,6 @@ a:hover {
   color: var(--text);
 }
 
-/* ---------- headings ---------- */
-
 h1 {
   font-size: 32px;
   margin: 32px 0 12px;
@@ -118,8 +112,6 @@ h3 {
   color: var(--muted);
   margin-bottom: 24px;
 }
-
-/* ---------- footer ---------- */
 
 footer {
   border-top: 1px solid var(--border);
@@ -141,7 +133,6 @@ footer {
   line-height: 1.7;
 }
 
-/* Markdown code blocks */
 .note-content pre {
   background: #f0f0f0;
   padding: 12px;

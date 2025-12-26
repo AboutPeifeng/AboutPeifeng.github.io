@@ -3,22 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Note | Frank</title>
+  <title>Note: Git | Frank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="note-page">
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><a href="/">Frank</a></div>
+      <nav class="nav-links">
+        <a href="/research/">Research</a>
+        <a href="/note/">Note</a>
+        <a href="/life/">Life</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="container">
-
-    <h1>Git Notes</h1>
-
+    <h1>Git Note</h1>
     <script type="text/markdown" id="md-source">
-
 ## 常用命令
-
 下面是几个简单的示例
-
 ```bash
 git status
 git branch
@@ -31,7 +37,7 @@ git fetch
     <script> const mdText = document.getElementById('md-source').textContent; document.getElementById('md-content').innerHTML = marked.parse(mdText); </script>
 
     <p style="margin-top:32px;">
-      ← <a href="/">Back to Note</a>
+      ← <a href="/note/">Back to Note</a>
     </p>
   </main>
 </body>
