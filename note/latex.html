@@ -1,27 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
   <meta charset="utf-8">
-  <title>LaTeX Notes | Frank</title>
+  <title>Note | Frank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #f6f7f9;
+      padding: 40px;
+    }
+
+    article {
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
+
 <body>
 
-<main class="container">
-  <h1>LaTeX Notes</h1>
+  <h1>LaTex Notes</h1>
 
-  <pre>
-\section{Introduction}
-\begin{equation}
-  E = mc^2
-\end{equation}
-  </pre>
+  <script type="text/markdown" id="md-source">
 
-  <p>
-    ← <a href="/note/">Back to Notes</a>
+## 常用
+
+下面是简单的示例
+
+$$
+E = mc^2
+$$
+
+  </script>
+
+  <article id="md-content"></article>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const mdText = document.getElementById('md-source').textContent;
+    document.getElementById('md-content').innerHTML = marked.parse(mdText);
+  </script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <script>
+    MathJax.typesetPromise();
+  </script>
+
+  <p style="margin-top:32px;">
+    ← <a href="/">Back to Note</a>
   </p>
-</main>
-
 </body>
+
+<footer>
+  <div class="container">© 2025 Frank</div>
+</footer>
+
 </html>

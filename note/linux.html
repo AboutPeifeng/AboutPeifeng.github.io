@@ -1,28 +1,64 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
   <meta charset="utf-8">
-  <title>Linux Cheatsheet | Frank</title>
+  <title>Note | Frank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #f6f7f9;
+      padding: 40px;
+    }
+
+    article {
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
+
 <body>
 
-<main class="container">
-  <h1>Linux Cheatsheet</h1>
+  <h1>Linux Notes</h1>
 
-  <pre>
+  <script type="text/markdown" id="md-source">
+
+## 常用命令
+
+下面是几个简单的示例
+
+```bash
 htop
 df -h
 du -sh *
 ps aux | grep python
 chmod -R 755 folder
-  </pre>
+```
+  </script>
 
-  <p>
-    ← <a href="/note/">Back to Notes</a>
+  <article id="md-content"></article>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script> const mdText = document.getElementById('md-source').textContent; document.getElementById('md-content').innerHTML = marked.parse(mdText); </script>
+
+  <p style="margin-top:32px;">
+    ← <a href="/">Back to Note</a>
   </p>
-</main>
-
 </body>
+
+<footer>
+  <div class="container">© 2025 Frank</div>
+</footer>
+
 </html>
