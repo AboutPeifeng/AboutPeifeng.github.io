@@ -176,7 +176,7 @@ footer {
 }
 
 .symbol-table {
-  width: 100%;
+  width: auto;
   border-collapse: collapse;
   margin: 24px 0;
   font-size: 15px;
@@ -185,8 +185,9 @@ footer {
 .symbol-table th,
 .symbol-table td {
   border: 1px solid var(--border);
-  padding: 8px 10px;
+  padding: 4px 8px;
   text-align: center;
+  line-height: 1.2;
 }
 
 .symbol-table th {
@@ -197,5 +198,5 @@ footer {
 .symbol-table td:nth-child(1),
 .symbol-table td:nth-child(2) {
   font-family: "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 15px;
 }
