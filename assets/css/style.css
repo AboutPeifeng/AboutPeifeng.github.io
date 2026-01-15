@@ -200,6 +200,9 @@ hr {
   border-top: 1px solid var(--border);
   margin: 40px 0;
 }
+/* 
+分割线风格控制
+*/
 
 .callout {
   background: #f9fafb;
